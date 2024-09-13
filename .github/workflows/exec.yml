@@ -9,7 +9,7 @@ jobs:
         steps:
             - name: Welcome Someone
               id: greet
-              uses: alexdesouzasilva/actions@v1.2
+              uses: alexdesouzasilva/actions@v1.3
               with:
                 name: 'Alex De Souza Silva'
             - name: Get the output message
