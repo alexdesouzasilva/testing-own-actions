@@ -1,0 +1,14 @@
+name: Test Action
+run-name: Start By ${{ github.actor }}  
+on: [push, workflow_dispatch]
+
+jobs:
+    Build:
+        runs-on: ubuntu-latest
+        name: Welcome
+        steps:
+            - name: Welcome Someone
+              uses: alexdesouzasilva/actions@v1.0.1
+              with:
+                name: 'Alex De Souza Silva'
+
