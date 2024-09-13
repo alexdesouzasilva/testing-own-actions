@@ -8,7 +8,10 @@ jobs:
         name: Welcome
         steps:
             - name: Welcome Someone
+              id: greet
               uses: alexdesouzasilva/actions@v1.0.1
               with:
                 name: 'Alex De Souza Silva'
+            - name: Get the output message
+              run: echo "The message was ${{ steps.greet.outputs.message }}"
 
